@@ -1,0 +1,57 @@
+body {
+    font-size: 15px;
+}
+
+
+p {
+    /*typography*/
+
+    background:rgb(251, 193, 212);
+    font-size: 30px;
+    color:rgb(51, 119, 83);
+
+    border: rgb(51, 119, 83) dotted 3px;
+        /*border is a shorthand property for border width, border style, and border color*/
+
+    text-align: left;
+    padding: 10px 20px;
+        /*
+         1 value: all sides
+           2 values: top/bottom right/left
+           3 values: top right/left bottom
+           4 values: top right bottom left
+        */
+
+    margin: 15px;
+}
+
+h1 {
+    color: rgb(255, 105, 180);
+
+    border: double red 5px;
+}
+
+h2 {
+    color: rgb(142, 172, 249);
+
+    border: dotted rgb(177, 231, 168) 4px;
+}
+
+/* ids are prefaced with a # symbol */
+#special {
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* classes are prefaced with a . symbol */
+.special {
+    background-color: rgb(204, 255, 229);
+    font-size: 25px;
+    border-radius: 20px;
+        /* border-radius creates rounded corners */
+}
+
+.center-text {
+    text-align: center;
+    padding: 20px; 
+}
