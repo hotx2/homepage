@@ -1,3 +1,35 @@
   body {
         background-image: url("background.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    font-family: "SimSun", "STSong", "Microsoft YaHei", serif;
+      font-size: 16px;     /* controls text size */
+      line-height: 1.6;    /* improves readability */
+      color: #333;         /* nice dark gray for text */
     }
+
+    
+h1 {
+
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    background-color: rgb(225, 226, 219);
+    color:rgb(29, 63, 33)
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(29, 63, 33);
+    background-color: rgb(225, 226, 219);
+    border: rgb(169, 179, 231) dotted 3px;
+    padding: 15px;
+    margin: 20px;
+    
+}
+
+img:not(:last-child) {
+  margin-right: 50px;
+}

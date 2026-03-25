@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    background-color: rgb(186, 221, 185);
+    padding:10px;
+    margin:10px;
+}
+
+.inline {
+    background-color: rgb(160, 196, 245);
+    width:300px;
+    height:100px;
+    padding:10px;
+    margin:30px;
+    display:inline-block;
+}
+
+.container {
+    background-color:rgb(186, 221, 185);
+    padding:20px;
+    height:600px;
+
+    display:flex;
+
+    /* flex-direction: defines the direction of the main axis 
+        row = horizontal
+        column = vertical 
+    */
+    flex-direction:column;
+    
+    flex-wrap: wrap;
+
+    /* justify-content: aligns along the main-axis */
+    justify-content: space-between;
+
+    /* align-items: aligns along the cross-axis, used for non-wrapping flexboxes */
+    align-items: center;
+
+    /* align-content: aligns along the cross-axis, used for wrapping flexboxes */
+    align-content: flex-end;
+
+    gap: 10px;
+
+}
+
+.item { 
+    background-color:antiquewhite; 
+    padding:10px;
+    border:1px solid;
+    width:100px;
+    order: 2;
+
+}
+
+.special {
+    background-color:rgb(160, 196, 245);
+    order: 1;
+    width:100px;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>-</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <button onclick="change()">Click me...</button>
+        <button onclick="glow()">Make it glow...</button>
+
+        <div class="menu">
+            Hello World!
+        </div>
+
+        <div class="gear"></div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var gear = document.querySelector(".gear");
+
+            function change() {
+                console.log('it works!');
+                menu.classList.toggle("active");
+                gear.classList.toggle("spin");
+                document.body.classList.toggle("dark");
+
+            }
+
+            function glow() {
+                menu.classList.toggle("glow");
+                gear.classList.toggle("glow");
+            }
+        </script>
+        
+    </body>
+</html>

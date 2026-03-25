@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-image: url("imgs/shelf.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.aisle {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.shelf {;
+    width: 200%;
+    height: 240px;
+    border: 1px;
+    margin: 40px 0;
+    display: flex;
+    
+   
+
+    
+  
+}
+
+.item {
+
+    padding:20px;
+    height:60px;
+    border:100px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+.item img {
+    height: 200px;
+    object-fit:scale-down;
+
+}   
+
+.item:hover {
+  transform: scale(1.2) translateY(-50px);
+  z-index: 10;
+}

@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin:0;
+}
+
+.buttons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.container {
+    display: flex;
+
+    background-color: #869D96;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transition: background-color 0.3s;
+
+}
+.box {
+    background: #525B76;
+    width: 100px;
+    height: 100px;
+
+    transition: background-color 0.3s;
+
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+
+
+}
+
+.box.dark {
+    
+    background: #201E50;
+}
+
+.box.spin {
+    animation-play-state: running;
+}
+
+.container.dark {
+    background-color: #475b51;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0deg;
+    }
+    100% {
+        rotate:360deg;
+    }
+}
+
+.animegirl {
+    width:200px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    opacity: 0;
+}
+
+.animegirl.show {
+    opacity: 1;
+}
+
+.draggable{
+    cursor:grab;
+}
