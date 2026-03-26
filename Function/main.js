@@ -16,7 +16,7 @@ const render = Render.create({
     }
 });
 
-// runner: runs the engine
+// runs the engine
 Render.run(render);
 Runner.run(Runner.create(), engine);
 
@@ -31,9 +31,9 @@ const bodies = Array.from(tacks).map((el, i) => {
         100,           // initial y
         50, 50,        // width, height of tack
         {
-        restitution: 0.5, // bounciness
+        restitution: 0.5, 
         friction: 0.5,
-        render: { visible: true }
+        render: { visible: false }
         }
     );
   World.add(world, body);
@@ -55,7 +55,7 @@ render.mouse = mouse;
 //floor of the canvas so the tacks don't fall off the screen
 const floor = Bodies.rectangle(
   window.innerWidth / 2,
-  window.innerHeight + 25,
+  window.innerHeight - 25,
   window.innerWidth,
   50,
   { isStatic: true }
