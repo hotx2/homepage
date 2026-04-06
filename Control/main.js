@@ -33,7 +33,7 @@ const bodies = Array.from(tacks).map((el, i) => {
         {
         restitution: 0.5, 
         friction: 0.5,
-        render: { visible: false }
+        render: { visible: true }
         }
     );
   World.add(world, body);

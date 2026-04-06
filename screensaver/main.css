@@ -1,0 +1,98 @@
+body {
+    background:black;
+    display: grid;
+    place-items: center;
+    height: 95vh;
+}
+
+.container {
+    width: 60px;
+    height: 60px;
+    transform-origin: center bottom;
+    animation: flicker 3ms ease-in infinite alternate;
+
+}
+
+.flame{
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg) scale(2.5, 2.5);
+
+    
+}
+
+.yellow {
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background: rgb(251, 172, 0);
+    box-shadow: 0px 0px 9px 4px rgb(251, 172, 0);
+}
+
+.orange {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 102, 0);
+    box-shadow: 0px 0px 9px 4px rgb(255, 102, 0);
+}
+
+.red{
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 0, 0);
+    box-shadow: 0px 0px 9px 4px rgb(255, 0, 0);
+}
+
+.white {
+    left: 15px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    background: rgb(252, 246, 246);
+    box-shadow: 0px 0px 9px 4px rgb(252, 246, 246);
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(2.5, 2.5);
+
+}
+
+.blue{
+    width: 10px;
+    height: 10px;
+    left: 25px;
+    bottom: -45px;
+    background: slateblue;
+    box-shadow: 0px 0px 15px 10px slateblue;
+}
+
+.black{
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    bottom: -100px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker{
+    0%{
+        transform: rotate(-1deg);}
+    20%{
+        transform: rotate(1deg);}
+    40%{
+        transform: rotate(-1deg);}
+    60%{
+        transform: rotate(1deg) scaleY(1.04);}
+    80%{
+        transform: rotate(-1deg) scaleY(0.92);}
+    100%{
+        transform: rotate(1deg);
+    }
+
+}
